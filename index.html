@@ -10,8 +10,34 @@
 <body>
     <div class="card">
         <div class="search">
-            <input type="text" placeholder="Enter city" spellcheck="false">
-            <button><img src="assets/search.png" ></button>
+            <span>
+                <input id="city-input" type="text" placeholder="Enter city" spellcheck="false">
+                <button id="search-btn"><img src="assets/search.png" ></button>
+            </span>
+            <span>
+                <div id="invalid-city"> Invalid City</div>
+            </span>
+        </div>
+        <div class="weather">
+            <img id="weather-visual" src="assets/Rain.png" class="weather-icon">
+            <h1 class="temp" id="temp">21°C</h1>
+            <h2 class="city" id="city">New York</h2>
+            <div class="details">
+                <div class="col">
+                    <img src="assets/humidity.png">
+                    <div>
+                        <p class="humidity" id="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="assets/wind.png">
+                    <div>
+                        <p class="wind" id="wind-speed">15km/h</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
